@@ -3,21 +3,27 @@ import { useState } from "react";
 import styles from "./bmi.module.css";
 
 export default function BMICalculator() {
-  const [weight, setWeight] = useState("");
-  const [height, setHeight] = useState("");
-  const [bmi, setBMI] = useState(null);
-  const [status, setStatus] = useState("");
+  const [weight, setWeight] = useState<string>("");
+  const [height, setHeight] = useState<string>("");
+  const [bmi, setBMI] = useState<string | null>(null);
+  const [status, setStatus] = useState<string>("");
 
   const calculateBMI = () => {
-    if (!weight || !height) return;
+    const w = Number(weight);
+    const h = Number(height);
 
-    const heightInMeters = height / 100;
-    const bmiValue = (weight / (heightInMeters * heightInMeters)).toFixed(1);
+    if (!w || !h) return;
+
+    const heightInMeters = h / 100;
+    const bmiValue = (w / (heightInMeters * heightInMeters)).toFixed(1);
+
     setBMI(bmiValue);
 
-    if (bmiValue < 18.5) setStatus("Underweight");
-    else if (bmiValue >= 18.5 && bmiValue < 24.9) setStatus("Normal Weight");
-    else if (bmiValue >= 25 && bmiValue < 29.9) setStatus("Overweight");
+    const numBMI = Number(bmiValue);
+
+    if (numBMI < 18.5) setStatus("Underweight");
+    else if (numBMI >= 18.5 && numBMI < 24.9) setStatus("Normal Weight");
+    else if (numBMI >= 25 && numBMI < 29.9) setStatus("Overweight");
     else setStatus("Obese");
   };
 

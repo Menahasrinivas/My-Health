@@ -1,0 +1,215 @@
+.wrapper {
+  width: 100%;
+  padding-bottom: 60px;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: #e8f5e9;
+  border-radius: 20px;
+  margin-bottom: 50px;
+  animation: fadeIn 0.8s ease;
+}
+
+.hero h1 {
+  font-size: 42px;
+  font-weight: 800;
+  color: #2e7d32;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-top: 10px;
+  color: #555;
+}
+
+/* SERVICE GRID */
+.gridSection {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 35px;
+  padding: 0 10px;
+}
+
+.card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 18px;
+  box-shadow: 0px 5px 20px rgba(0,0,0,0.12);
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 8px 25px rgba(0,0,0,0.18);
+}
+
+.cardImg {
+  border-radius: 15px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  font-size: 22px;
+  color: #2e7d32;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 15px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.btn {
+  background: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background: #2e7d32;
+}
+
+
+
+/* WHY SECTION */
+.whySection {
+  margin-top: 70px;
+  text-align: center;
+}
+
+.whySection h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #2e7d32;
+}
+
+.whyGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  padding: 0 10px;
+}
+
+.whyBox {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.12);
+  transition: 0.3s ease;
+}
+
+.whyBox:hover {
+  transform: translateY(-5px);
+}
+
+.whyBox span {
+  font-size: 32px;
+}
+
+.whyBox h3 {
+  margin-top: 10px;
+  font-weight: 700;
+  color: #2e7d32;
+}
+
+.whyBox p {
+  margin-top: 5px;
+  color: #555;
+}
+
+
+
+/* CTA */
+.cta {
+  margin-top: 80px;
+  background: #4caf50;
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.cta h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.ctaBtn {
+  margin-top: 20px;
+  padding: 12px 35px;
+  background: white;
+  color: #4caf50;
+  border-radius: 25px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.ctaBtn:hover {
+  background: #e8f5e9;
+}
+
+.card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 18px;
+  box-shadow: 0px 5px 20px rgba(0,0,0,0.12);
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  overflow: hidden;        /* IMPORTANT */
+  position: relative;      /* IMPORTANT */
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 8px 25px rgba(0,0,0,0.18);
+}
+
+.cardImg {
+  border-radius: 15px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover .cardImg {
+  transform: scale(1.05); /* smooth image zoom */
+}
+
+.imgWrapper {
+  width: 100%;
+  height: 220px;
+  border-radius: 15px;
+  overflow: hidden;       /* 🔥 FIXES corner issue */
+  position: relative;
+  margin-bottom: 15px;     /* required for Image fill */
+}
+
+.cardImg {
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  display: block;
+}
+
+.card:hover .cardImg {
+  transform: scale(1.05);
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}

@@ -1,0 +1,183 @@
+/* MAIN WRAPPER */
+.wrapper {
+  max-width: 700px;
+  margin: auto;
+  padding: 20px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+/* TITLES */
+.title {
+  font-size: 34px;
+  color: #2e7d32;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #555;
+  font-size: 16px;
+  margin-bottom: 25px;
+  padding: 0 10px;
+}
+
+/* BMI CARD */
+.card {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0px 5px 20px rgba(0,0,0,0.12);
+  width: 100%;
+}
+
+/* INPUT GROUP */
+.inputGroup {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.inputGroup label {
+  font-weight: 600;
+  color: #2e7d32;
+  font-size: 15px;
+}
+
+.inputGroup input {
+  width: 100%;
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  outline: none;
+  margin-top: 6px;
+  font-size: 16px;
+}
+
+.inputGroup input:focus {
+  border-color: #4caf50;
+}
+
+/* BUTTON */
+.btn {
+  margin-top: 10px;
+  background: #4caf50;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 25px;
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  width: 100%;
+  max-width: 250px;
+}
+
+.btn:hover {
+  background: #2e7d32;
+}
+
+/* RESULT BOX */
+.resultBox {
+  margin-top: 25px;
+  background: #e8f5e9;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.resultBox h3 {
+  font-size: 24px;
+  margin-bottom: 5px;
+  color: #2e7d32;
+}
+
+.status {
+  font-weight: 700;
+  color: #4caf50;
+  font-size: 17px;
+}
+
+/* TABLE SECTION */
+.tableSection {
+  margin-top: 50px;
+}
+
+.tableSection h2 {
+  color: #2e7d32;
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+
+/* MAKE TABLE RESPONSIVE */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+.table th {
+  background: #4caf50;
+  color: white;
+  padding: 12px;
+  font-weight: 700;
+}
+
+.table td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+.table tr:nth-child(even) {
+  background: #f4fff6;
+}
+
+/* MOBILE RESPONSIVE FIXES */
+@media (max-width: 600px) {
+  .title {
+    font-size: 28px;
+  }
+
+  .card {
+    padding: 18px;
+  }
+
+  .inputGroup input {
+    padding: 12px;
+    font-size: 15px;
+  }
+
+  .btn {
+    font-size: 15px;
+    padding: 12px;
+  }
+
+  /* Table Responsive – Add Scroll */
+  .table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .table td, .table th {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 420px) {
+  .title {
+    font-size: 25px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  .resultBox h3 {
+    font-size: 20px;
+  }
+}

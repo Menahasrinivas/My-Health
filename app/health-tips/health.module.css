@@ -1,0 +1,101 @@
+.wrapper {
+  width: 100%;
+  padding-bottom: 60px;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  background: #e8f5e9;
+  padding: 50px 20px;
+  border-radius: 20px;
+  margin-bottom: 40px;
+}
+
+.hero h1 {
+  font-size: 36px;
+  color: #2e7d32;
+  font-weight: 800;
+}
+
+.hero p {
+  font-size: 18px;
+  color: #555;
+  margin-top: 10px;
+}
+
+/* GRID */
+.tipsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  padding: 0 10px;
+}
+
+/* CARD */
+.card {
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0px 5px 20px rgba(0,0,0,0.12);
+  overflow: hidden;
+  text-align: center;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 10px 25px rgba(0,0,0,0.18);
+}
+
+/* IMAGE */
+.imgBox {
+  width: 100%;
+  height: 180px;          /* ⭐ ALL IMAGES WILL SHOW */
+  position: relative;     /* ⭐ required for next/image fill */
+  overflow: hidden;
+}
+
+.tipImg {
+  object-fit: cover;
+  transition: 0.3s;
+}
+
+.card:hover .tipImg {
+  transform: scale(1.05);
+}
+
+/* TEXT */
+.card h3 {
+  margin-top: 15px;
+  font-size: 20px;
+  color: #2e7d32;
+  font-weight: 700;
+  padding: 0 10px;
+}
+
+.card p {
+  color: #555;
+  font-size: 15px;
+  padding: 0 15px 20px;
+  margin-top: 8px;
+}
+
+/* MOBILE */
+@media (max-width: 500px) {
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .imgBox {
+    height: 160px;
+  }
+
+  .card h3 {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,256 @@
+.wrapper {
+  width: 100%;
+  padding: 20px;
+}
+
+/* HEADER */
+.headerSection {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.headerSection h1 {
+  font-size: 36px;
+  font-weight: 800;
+  color: #2e7d32;
+}
+
+.headerSection p {
+  font-size: 16px;
+  opacity: 0.85;
+}
+
+/* MISSION BOX */
+.boxSection {
+  background: #f1fff1;
+  padding: 20px;
+  border-radius: 16px;
+  margin-bottom: 50px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.sectionTitle {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #1b5e20;
+}
+
+.text {
+  font-size: 16px;
+  line-height: 1.7;
+  opacity: 0.85;
+}
+
+/* GRID SECTION */
+.gridSection {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 25px;
+  margin-top: 25px;
+}
+
+.card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  transition: 0.35s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+}
+
+.icon {
+  font-size: 40px;
+  margin-bottom: 12px;
+}
+
+/* WHY CHOOSE US COLORS */
+.whySection {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.whyGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  margin-top: 25px;
+}
+
+.whyItem {
+  padding: 22px;
+  border-radius: 18px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  transition: 0.35s ease;
+}
+
+.whyItem:hover {
+  transform: translateY(-8px);
+}
+
+/* Colors */
+.greenCard { background: #e9ffef; }
+.greenCard:hover { background: #d9ffe5; }
+
+.blueCard { background: #e8f5ff; }
+.blueCard:hover { background: #d4ecff; }
+
+.yellowCard { background: #fff7de; }
+.yellowCard:hover { background: #ffefc1; }
+
+.whyIcon {
+  font-size: 40px;
+  margin-bottom: 12px;
+}
+/* NEW CORE VALUES SECTION */
+.valuesSection {
+  margin-top: 70px;
+  text-align: center;
+}
+
+.valuesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 28px;
+  margin-top: 30px;
+}
+
+.valueCard {
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 5px 18px rgba(0,0,0,0.12);
+  transition: 0.35s ease;
+  cursor: pointer;
+}
+
+/* Hover effect */
+.valueCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 28px rgba(0,0,0,0.18);
+}
+
+/* Icon */
+.valueIcon {
+  font-size: 42px;
+  margin-bottom: 14px;
+}
+
+/* Title */
+.valueCard h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  color: #1b5e20;
+}
+
+/* Description */
+.valueCard p {
+  font-size: 15px;
+  opacity: 0.85;
+  line-height: 1.6;
+}
+.aboutWrapper {
+  padding: 40px 20px;
+}
+
+.aboutSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* LEFT CONTENT */
+.left {
+  flex: 1;
+  min-width: 300px;
+}
+
+.left h1 {
+  font-size: 36px;
+  font-weight: 800;
+  color: #2e7d32;
+  margin-bottom: 20px;
+}
+
+.left p {
+  font-size: 17px;
+  line-height: 1.6;
+  margin-bottom: 18px;
+  color: #444;
+}
+
+/* BUTTON */
+.btn {
+  padding: 12px 30px;
+  background: #4caf50;
+  border: none;
+  color: white;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background: #2e7d32;
+}
+
+/* RIGHT IMAGE */
+.right {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  justify-content: center;
+}
+
+.aboutImg {
+  width: 100%;
+  border-radius: 18px;
+  object-fit: cover;
+  box-shadow: 0px 8px 20px rgba(0,0,0,0.15);
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 760px) {
+  .aboutSection {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .left h1 {
+    font-size: 28px;
+  }
+}
+
+
+/* CARD COLORS */
+.pinkCard { background: #ffeaf1; }
+.pinkCard:hover { background: #ffd9e7; }
+
+.tealCard { background: #e7fffa; }
+.tealCard:hover { background: #d4fff5; }
+
+.orangeCard { background: #fff3e0; }
+.orangeCard:hover { background: #ffe3ba; }
+
+.purpleCard { background: #f5e8ff; }
+.purpleCard:hover { background: #ecd6ff; }
+
+/* Mobile */
+@media (max-width: 480px) {
+  .valueCard h3 {
+    font-size: 18px;
+  }
+}

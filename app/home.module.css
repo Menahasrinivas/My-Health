@@ -1,0 +1,249 @@
+/* WRAPPER */
+.wrapper {
+  width: 100%;
+  padding: 20px;
+}
+
+
+/* =============================
+   HERO SECTION
+============================= */
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+.left h1 {
+  font-size: 48px;
+  font-weight: 800;
+  color: #2e7d32;
+  line-height: 1.2;
+}
+
+.left p {
+  margin-top: 15px;
+  font-size: 18px;
+  color: #555;
+  max-width: 480px;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 12px 30px;
+  background: #4caf50;
+  color: white;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #3a8d42;
+}
+.heroImgBox {
+  position: relative;
+  width: 100%;
+  max-width: 700px; /* SUPER BIG IMAGE */
+  aspect-ratio: 16 / 10;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.left {
+  flex: 1;
+  max-width: 480px; /* Don’t allow huge stretch */
+}
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px; /* increased space */
+  margin-top: 60px;
+  flex-wrap: wrap;
+}
+
+
+/* 
+.heroImage {
+  object-fit: cover;
+} */
+
+/* Image Wrapper for Responsiveness */
+.imgWrapper {
+  position: relative;
+  width: 100%;
+  max-width: 420px;
+  height: 420px;
+}
+
+.heroImage {
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+
+/* =============================
+   WHAT WE OFFER
+============================= */
+
+.offerModern2 {
+  margin-top: 80px;
+}
+
+.featureRow {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: #f5f5f5;
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+
+.featureRow:hover {
+  background: #e8f5e9;
+}
+
+.featureIcon {
+  font-size: 36px;
+}
+
+.featureText h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #2e7d32;
+}
+
+.featureText p {
+  color: #555;
+}
+
+
+/* =============================
+   WHY CHOOSE US
+============================= */
+
+.whyWrapper {
+  margin-top: 70px;
+  background: #e8f5e9; 
+  padding: 50px 20px;
+  border-radius: 20px; 
+
+}
+
+.whyHeading {
+  text-align: center;
+  font-size: 34px;
+  font-weight: 800;
+  color: #2e7d32;
+  margin-bottom: 40px;
+}
+
+.whyGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.whyItem {
+  background: white;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0px 5px 20px rgba(0,0,0,0.10);
+  text-align: center;
+  transition: 0.3s;
+}
+
+.whyItem:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 25px rgba(0,0,0,0.15);
+}
+
+.whyIcon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+
+
+
+/* =============================
+   MOBILE RESPONSIVE
+============================= */
+
+@media (max-width: 900px) {
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .imgWrapper {
+    max-width: 320px;
+    height: 320px;
+    margin: auto;
+  }
+
+  .left h1 {
+    font-size: 38px;
+  }
+
+  .left p {
+    margin: auto;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .imgWrapper {
+    max-width: 260px;
+    height: 260px;
+  }
+
+  .left h1 {
+    font-size: 32px;
+  }
+
+  .featureRow {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .featureText h3 {
+    font-size: 20px;
+  }
+
+  .featureText p {
+    font-size: 16px;
+  }
+
+  .whyHeading {
+    font-size: 28px;
+  }
+}
+@media (max-width: 768px) {
+  .heroImgBox {
+    max-width: 320px;
+    aspect-ratio: 16 / 12; 
+    margin: auto;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .heroImgBox {
+    max-width: 400px; 
+    aspect-ratio: 16 / 12;
+    margin: auto;
+  }
+}
